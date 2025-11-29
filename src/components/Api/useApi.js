@@ -3,7 +3,7 @@ const API_URL = "https://6915287784e8bd126af8d6f6.mockapi.io/user";
 
 // GET: 전체 목록 가져오기
 export async function getItems() {
-  const res = await fetch(API_URL);s
+  const res = await fetch(API_URL);
   if (!res.ok) throw new Error("GET 요청 실패");
   return res.json();
 }
